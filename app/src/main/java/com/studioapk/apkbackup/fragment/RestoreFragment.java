@@ -147,10 +147,10 @@ public class RestoreFragment extends Fragment {
     private void dialogApkFileOption(final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         final RestoreModel r = rAdapter.getItem(position);
-        builder.setTitle("گزینه ها");
+        builder.setTitle("Option");
         ListView listView = new ListView(getActivity());
         listView.setPadding(25, 25, 25, 25);
-        String[] stringArray = new String[]{"بازگرداندن", "اشتراک", "پاک کردن"};
+        String[] stringArray = new String[]{"Restore", "Share", "Remove"};
         listView.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, stringArray));
         builder.setView(listView);
         final AppCompatDialog dialog = builder.create();

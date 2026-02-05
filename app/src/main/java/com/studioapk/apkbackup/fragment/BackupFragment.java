@@ -77,7 +77,7 @@ public class BackupFragment extends Fragment {
 
     public void refresh(boolean fab_flag) {
         if (taskRunning) {
-            Snackbar.make(view, "درحال بارگذاری", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(view, "Loading...", Snackbar.LENGTH_SHORT).show();
         } else {
             new AppListLoaderTask(fab_flag).execute();
         }
@@ -146,11 +146,11 @@ public class BackupFragment extends Fragment {
                 listView.setAdapter(bAdapter);
                 setMultipleChoice();
             } else {
-                Snackbar.make(view, "بارگذاری ناموفق", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(view, "Load failed", Snackbar.LENGTH_SHORT).show();
             }
             taskRunning = false;
             if (fab_flag) {
-                Snackbar.make(view, "بارگذاری پایان یافت", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(view, "Load successful", Snackbar.LENGTH_SHORT).show();
             }
             super.onProgressUpdate(values);
         }
@@ -168,7 +168,7 @@ public class BackupFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             progress = new ProgressDialog(getActivity());
-            progress.setMessage("پشتبان گیری");
+            progress.setMessage("Please wait...");
             progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
             progress.setMax(selected_app.size());
             progress.setCancelable(false);
@@ -222,9 +222,9 @@ public class BackupFragment extends Fragment {
             if (result != null) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
                 alert.setCancelable(false);
-                alert.setTitle("اتمام پشتیبان گیری اطلاعات");
+                alert.setTitle("Backup finished");
                 alert.setMessage("APK Location: " + Constant.BACKUP_FOLDER);
-                alert.setPositiveButton("باشه", new DialogInterface.OnClickListener() {
+                alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dg, int arg1) {
                         bAdapter.resetSelected();
@@ -235,7 +235,7 @@ public class BackupFragment extends Fragment {
                 });
                 alert.show();
             } else {
-                Toast.makeText(getActivity(),"بارگیری اطلاعانت ناموفق بود", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Failed", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -270,8 +270,8 @@ public class BackupFragment extends Fragment {
         @Override
         public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
             final int checkedCount = listView.getCheckedItemCount();
-            mode.setTitle(checkedCount+"");
-           // Toast.makeText(getActivity().getApplicationContext(), checkedCount + " selected", Toast.LENGTH_SHORT).show();
+            mode.setTitle(checkedCount + "");
+            // Toast.makeText(getActivity().getApplicationContext(), checkedCount + " selected", Toast.LENGTH_SHORT).show();
             bAdapter.setSelected(position, checked);
         }
 
@@ -320,10 +320,10 @@ public class BackupFragment extends Fragment {
     private void dialogAppOption(final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         final BackupModel m = bAdapter.getItem(position);
-        builder.setTitle("گزینه ها");
+        builder.setTitle("Option");
         ListView listView = new ListView(getActivity());
         listView.setPadding(25, 25, 25, 25);
-        String[] stringArray = new String[]{"پشتیبان گیری", "پاک کردن", "جزئیات"};
+        String[] stringArray = new String[]{"Backup", "Remove", "Details"};
         listView.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, stringArray));
         builder.setView(listView);
         final AppCompatDialog dialog = builder.create();

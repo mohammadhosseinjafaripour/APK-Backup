@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/APK Backup.iml" filepath="$PROJECT_DIR$/APK Backup.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APK Backup.iml" filepath="$PROJECT_DIR$/APK Backup.iml" group="APK Backup" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="APK Backup/app" />
     </modules>
   </component>
 </project>

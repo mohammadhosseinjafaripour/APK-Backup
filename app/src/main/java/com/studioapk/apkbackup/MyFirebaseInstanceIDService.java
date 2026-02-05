@@ -1,5 +1,6 @@
 package com.studioapk.apkbackup;
 
+/*
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -31,10 +32,13 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.util.Random;
 
+*/
 /**
  * Created by jefferson on 12/23/2016.
- */
+ *//*
 
+
+/*
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     private static final String TAG = "MyFirebaseIIDService";
@@ -47,9 +51,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
 
 
-        DefaultHttpClient httpclient = new DefaultHttpClient();
-        HttpHost httpproxy = new HttpHost("5.189.169.127:8080");
-        httpclient.getParams().setParameter(ConnRoutePNames.DEFAULT_PROXY, httpproxy);
+
         if(isOnline())
         {
             //Getting registration token
@@ -127,4 +129,4 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
-}
+}*/

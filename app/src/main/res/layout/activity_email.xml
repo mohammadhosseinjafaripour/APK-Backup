@@ -55,35 +55,15 @@
             android:background="@color/accent_material_light"
             android:textColor="#ffffff" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="برای تماس کافی است یکی از نام ها را لمس کنید"
-            android:id="@+id/textView"
-            android:layout_gravity="right"
-            android:textColor="#000000"
-            android:layout_marginTop="15dp" />
+        <Button
+            android:text="ارتباط از طریق تلگرام"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:background="@color/accent_material_light"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tg_contact"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="محمد حسین جعفری پور"
-            android:id="@+id/jfp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="18dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="محمد میر شمس"
-            android:id="@+id/msa"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="18dp" />
     </LinearLayout>
 
 </ScrollView>

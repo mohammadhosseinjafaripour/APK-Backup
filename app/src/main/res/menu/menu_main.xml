@@ -8,10 +8,4 @@
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="ifRoom" />
 
-    <item
-        android:id="@+id/menu"
-        android:title=""
-        android:icon="@drawable/grid"
-        android:orderInCategory="200"
-        app:showAsAction="ifRoom" />
 </menu>

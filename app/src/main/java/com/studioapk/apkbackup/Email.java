@@ -40,22 +40,13 @@ public class Email extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email);
 
-        TextView jfp=(TextView)findViewById(R.id.jfp);
-        jfp.setOnClickListener(new View.OnClickListener() {
+
+        Button tg=(Button)findViewById(R.id.tg_contact);
+        tg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri number = Uri.parse("tel:09385051442");
-                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                startActivity(callIntent);
-            }
-        });
-        TextView msa=(TextView)findViewById(R.id.msa);
-        msa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri number = Uri.parse("tel:09370237037");
-                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                startActivity(callIntent);
+                Intent intetn=new Intent(Intent.ACTION_VIEW,Uri.parse("tg://resolve?domain=bekhandrizeme"));
+                startActivity(intetn);
             }
         });
 

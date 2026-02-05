@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "334265949005-6f0fc93i6smkbkd3qcb2ib56sgcrlic4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.studioapk.apkbackup",
+            "certificate_hash": "26B9E1FCBD86FDA6E246A3976AECC9030C6E341F"
+          }
+        },
+        {
           "client_id": "334265949005-ld4s4p0upe99v8i4bt4li0d3o9v8jqsb.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334265949005-ld4s4p0upe99v8i4bt4li0d3o9v8jqsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
