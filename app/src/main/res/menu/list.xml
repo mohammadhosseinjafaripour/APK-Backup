@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/share" android:icon="@drawable/sms" android:title="ارتباط با ما  / تبلیغات" />
+    <item android:id="@+id/upload" android:icon="@drawable/aboutus" android:title="درباره ما"/>
+    <item android:id="@+id/call" android:icon="@drawable/world" android:title="سایت ما"/>
+    <item android:id="@+id/help" android:icon="@drawable/vote" android:title="پیشنهادات و انتقادات"/>
+</menu>

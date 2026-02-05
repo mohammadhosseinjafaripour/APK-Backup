@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">APK Backup</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Replace with your own interstitial ad unit id. -->
+    <string name="interstitial_ad_unit_id"></string>
+
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="banner_ad_unit_id"></string>
+
+    <string name="tab_title_backup">پشتیبان گیری</string>
+    <string name="tab_title_restore">بازگردانی</string>
+
+    <string name="hint_backup_search">جستجو</string>
+    <string name="hint_restore_search">جستجو</string>
+
+
+    <string name="about_text">Aplication to backup, restore, share you applications, with simple and elegant design</string>
+
+    <string name="share">Share</string>
+    <string name="upload">Upload</string>
+    <string name="copy">Copy</string>
+    <string name="print">Print this page</string>
+    <string name="call">Call</string>
+    <string name="help">Help</string>
+    <string name="bottomsheet">BottomSheet Sample</string>
+
+</resources>

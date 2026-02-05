@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "334265949005",
+    "firebase_url": "https://apkbackup-bc61d.firebaseio.com",
+    "project_id": "apkbackup-bc61d",
+    "storage_bucket": "apkbackup-bc61d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334265949005:android:be1d943a2170ba7b",
+        "android_client_info": {
+          "package_name": "com.studioapk.apkbackup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334265949005-ld4s4p0upe99v8i4bt4li0d3o9v8jqsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2slcAnv7TupaReFvkFvVWJuhmQlBjFAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
